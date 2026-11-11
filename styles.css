@@ -106,7 +106,7 @@ a { color: var(--accent); }
   filter: drop-shadow(0 6px 12px rgba(0, 0, 0, .25)); transition: transform .35s; }
 .card:hover .thumb .ico { transform: translateY(-50%) scale(1.08) rotate(-3deg); }
 .thumb > span { position: relative; z-index: 1; }
-.thumb .tc { font: 900 .8rem/1 var(--font); background: rgba(255, 255, 255, .22); border: 1px solid rgba(255, 255, 255, .4); color: #fff; padding: 5px 10px; border-radius: 99px; }
+.thumb .tc { font: 900 .8rem/1 var(--font); background: linear-gradient(180deg, #ffe082, #ffc928); color: #0b2e6b; padding: 5px 10px; border-radius: 99px; box-shadow: 0 4px 10px rgba(0, 0, 0, .2); }
 .thumb .tn { padding: 5px 14px 6px; border-radius: 12px; background: linear-gradient(180deg, #ffe082, #ffc928); color: #0b2e6b; max-width: 100%;
   font: 900 clamp(1.3rem, 2.3vw, 1.65rem)/1.15 var(--font); letter-spacing: -.3px; box-shadow: 0 8px 20px rgba(0, 0, 0, .28); overflow-wrap: anywhere; }
 .thumb .ts { margin-top: auto; font-weight: 700; font-size: .92rem; opacity: .95; padding-left: 2px; }
