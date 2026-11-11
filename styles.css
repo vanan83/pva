@@ -180,6 +180,8 @@ a { color: var(--accent); }
   .grid, .stds { grid-template-columns: 1fr; gap: 16px; }
   .contact .wrap { margin: 0 14px; padding: 22px 18px; border-radius: 20px; }
   .cbtn { flex: 1 1 calc(50% - 10px); justify-content: center; padding: 8px 10px; font-size: .9rem; }
+  .cbtn { white-space: nowrap; }
+  .cbtn.zalo, .cbtn.mail { flex-basis: 100%; }
   .viewer { padding: 0; }
   .v-box { width: 100%; height: 100%; border-radius: 0; }
   .v-top { padding-top: max(10px, env(safe-area-inset-top)); }
