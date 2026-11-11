@@ -18,6 +18,7 @@
   function filter() {
     const q = norm($('#q').value.trim()), words = q.split(/\s+/).filter(Boolean); let n = 0;
     cards.forEach((c) => { const ok = (!group || c.dataset.g === group) && words.every((w) => c._q.includes(w)); c.hidden = !ok; if (ok) n++; });
+    $$('.grp').forEach((g) => { g.hidden = !g.querySelector('.card:not([hidden])'); });   // nhóm không còn phần mềm nào thì ẩn cả tiêu đề
     $('#empty').hidden = n > 0;
   }
   $('#q').addEventListener('input', filter);
