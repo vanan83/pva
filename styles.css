@@ -64,12 +64,14 @@ a { color: var(--accent); }
 #q { width: 100%; font: inherit; padding: 13px 18px; border: 1.5px solid var(--line); border-radius: 16px; background: var(--card); color: var(--ink);
   box-shadow: var(--shadow); outline: none; transition: border-color .15s, box-shadow .15s; }
 #q:focus { border-color: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 18%, transparent); }
-.chips { display: flex; gap: 8px; margin-top: 10px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
-.chips::-webkit-scrollbar { display: none; }
-.chip { flex: none; font: inherit; font-weight: 700; font-size: .92rem; border: 1.5px solid var(--line); background: var(--card); color: var(--ink);
-  padding: 7px 14px; border-radius: 99px; cursor: pointer; box-shadow: var(--shadow); transition: transform .12s; }
-.chip b { display: inline-block; min-width: 22px; margin-left: 4px; padding: 0 6px; border-radius: 99px; background: var(--soft); color: var(--accent); font-size: .8rem; }
-.chip:hover { transform: translateY(-1px); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; padding-bottom: 2px; }
+.chip { flex: none; font: inherit; font-weight: 700; font-size: .92rem; border: 1.5px solid color-mix(in srgb, var(--accent) 28%, transparent);
+  background: color-mix(in srgb, var(--accent) 12%, var(--card)); color: color-mix(in srgb, var(--accent) 70%, var(--ink));
+  padding: 7px 14px; border-radius: 99px; cursor: pointer; transition: transform .12s, background .12s; }
+.chip b { display: inline-block; min-width: 22px; margin-left: 4px; padding: 0 6px; border-radius: 99px; background: var(--card); color: var(--accent); font-size: .8rem; }
+.chip:hover { transform: translateY(-1px); background: color-mix(in srgb, var(--accent) 20%, var(--card)); }
+@media (max-width: 679px) { .chips { gap: 6px; margin-top: 8px; } .chip { padding: 5px 9px; font-size: .84rem; }
+  .chip b { min-width: 18px; margin-left: 3px; padding: 0 4px; font-size: .74rem; } }
 .chip.on { background: var(--grad); color: #fff; border-color: transparent; box-shadow: 0 6px 16px color-mix(in srgb, var(--accent) 35%, transparent); }
 .chip.on b { background: rgba(255, 255, 255, .25); color: #fff; }
 
