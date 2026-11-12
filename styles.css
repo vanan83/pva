@@ -2,7 +2,7 @@
    Mỗi bộ màu chỉ đặt 7 biến: --t1 (đậm) --t2 (chính) --t3 (sáng) --acc (nhấn) --lt (nhấn sáng) --b1/--b2 (nhãn mã, tên PM).
    Mọi màu còn lại suy ra từ các biến này. */
 :root {
-  --t1: #082a63; --t2: #0d47a1; --t3: #0288d1; --acc: #1769d1; --lt: #29a8f0; --b1: #ffe082; --b2: #ffc928;
+  --t1: #053d30; --t2: #0b7a5a; --t3: #10b981; --acc: #0b8a63; --lt: #34d399; --b1: #ffe082; --b2: #ffc928; /* mặc định: Ngọc lục bảo */
   --bg: color-mix(in srgb, var(--t3) 9%, #f8fbfe); --card: #ffffff; --ink: #0f2440; --muted: #51657f;
   --line: color-mix(in srgb, var(--t3) 20%, #fff); --soft: color-mix(in srgb, var(--t3) 12%, #fff);
   --ocean: linear-gradient(115deg, var(--t1) 0%, var(--t2) 48%, var(--t3) 100%);
@@ -131,9 +131,7 @@ a { color: var(--accent); }
   transition: transform .12s, filter .12s; }
 .btn:hover { transform: translateY(-1px); filter: brightness(1.06); }
 .btn:active { transform: translateY(1px); }
-.btn.yt { background: #fdecea; color: #c62828; border: 1.5px solid #f8c7c2; }
-.btn.yt:hover { background: #fbdcd8; }
-.btn.dl { background: var(--grad); box-shadow: 0 8px 18px -6px var(--acc); }
+.btn.yt, .btn.dl { background: var(--grad); box-shadow: 0 8px 18px -6px var(--acc); }
 .btn.rd { background: linear-gradient(135deg, #00897b, #22bcd2); box-shadow: 0 6px 16px rgba(0, 137, 123, .3); }
 .empty { text-align: center; color: var(--muted); padding: 30px; }
 
@@ -212,7 +210,7 @@ a { color: var(--accent); }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
 
 /* ---------- bộ màu (html[data-theme]) ---------- */
-html[data-theme="emerald"] { --t1: #053d30; --t2: #0b7a5a; --t3: #10b981; --acc: #0b8a63; --lt: #34d399; }
+html[data-theme="ocean"] { --t1: #082a63; --t2: #0d47a1; --t3: #0288d1; --acc: #1769d1; --lt: #29a8f0; }
 html[data-theme="violet"] { --t1: #2a0f5c; --t2: #5b21b6; --t3: #8b5cf6; --acc: #6d28d9; --lt: #a78bfa; }
 html[data-theme="sunset"] { --t1: #6b1d0b; --t2: #c2410c; --t3: #f59e0b; --acc: #d9480f; --lt: #fb923c; --b1: #ffffff; --b2: #ffe7c2; }
 html[data-theme="crimson"] { --t1: #4c0519; --t2: #be123c; --t3: #fb7185; --acc: #be123c; --lt: #fb7185; }

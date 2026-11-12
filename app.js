@@ -5,14 +5,14 @@
 
   /* Đổi màu giao diện (nút 🎨): lưu lựa chọn trong máy người xem; đầu trang đã áp dụng sẵn để không bị nháy màu */
   const tBtn = $('#themeBtn'), tPop = $('#themePop'), meta = $('meta[name="theme-color"]');
-  const curTheme = () => document.documentElement.dataset.theme || 'ocean';
+  const curTheme = () => document.documentElement.dataset.theme || 'emerald';   // mặc định: Ngọc lục bảo
   function paintTheme() {
     const t = curTheme();
     $$('.sw').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.theme === t)));
     const on = $('.sw[aria-pressed="true"]'); if (on && meta) meta.content = on.dataset.c;
   }
   function setTheme(t) {
-    if (t === 'ocean') delete document.documentElement.dataset.theme; else document.documentElement.dataset.theme = t;
+    if (t === 'emerald') delete document.documentElement.dataset.theme; else document.documentElement.dataset.theme = t;
     try { localStorage.setItem('pva.theme', t); } catch (e) { /* trình duyệt chặn lưu: vẫn đổi màu cho lần xem này */ }
     paintTheme();
   }
