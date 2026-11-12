@@ -115,7 +115,8 @@
     if (store.get('tok', '')) viewList(); else viewLogin();
   }
   function closeAdmin() { A.hidden = true; document.body.style.overflow = ''; if (location.hash === '#quan-tri') history.replaceState(null, '', '#tcvn'); }
-  A.addEventListener('click', (e) => { if (e.target === A || e.target.closest('[data-close]')) closeAdmin(); });
+  // chỉ đóng bằng nút ✕: bấm / kéo chuột ra nền mờ khi đang gõ form không làm mất hộp quản trị
+  A.addEventListener('click', (e) => { if (e.target.closest('[data-close]')) closeAdmin(); });
   const frame = (body) => { box.innerHTML = `<div class="adm-top"><b>🔐 Quản trị TCVN</b><button class="vbtn x" data-close aria-label="Đóng">✕</button></div><div class="adm-body"><p class="adm-msg" id="admMsg" hidden></p>${body}</div>`; };
 
   function viewLogin() {
