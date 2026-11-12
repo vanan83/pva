@@ -2,7 +2,7 @@
    Mỗi bộ màu chỉ đặt 7 biến: --t1 (đậm) --t2 (chính) --t3 (sáng) --acc (nhấn) --lt (nhấn sáng) --b1/--b2 (nhãn mã, tên PM).
    Mọi màu còn lại suy ra từ các biến này. */
 :root {
-  --t1: #053d30; --t2: #0b7a5a; --t3: #10b981; --acc: #0b8a63; --lt: #34d399; --b1: #ffe082; --b2: #ffc928; /* mặc định: Ngọc lục bảo */
+  --t1: #083344; --t2: #0e7490; --t3: #22d3ee; --acc: #0e7490; --lt: #22d3ee; --b1: #ffe082; --b2: #ffc928; /* mặc định: Xanh ngọc */
   --bg: color-mix(in srgb, var(--t3) 9%, #f8fbfe); --card: #ffffff; --ink: #0f2440; --muted: #51657f;
   --line: color-mix(in srgb, var(--t3) 20%, #fff); --soft: color-mix(in srgb, var(--t3) 12%, #fff);
   --ocean: linear-gradient(115deg, var(--t1) 0%, var(--t2) 48%, var(--t3) 100%);
@@ -86,13 +86,18 @@ a { color: var(--accent); }
 
 /* nhóm phần mềm */
 .grp { margin: 6px 0 30px; }
+/* thanh tiêu đề nhóm: nền sáng + chữ đậm màu để tách khỏi các thẻ phần mềm (nền màu) bên dưới */
 .grp-h { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 14px; margin: 0 0 16px; padding: 12px 18px; border-radius: 16px;
-  background: var(--banner); color: #fff; box-shadow: 0 12px 26px -10px var(--acc); }
-.grp-ic { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 13px; background: #fff; color: var(--t2); box-shadow: 0 4px 10px rgba(0, 0, 0, .2); }
+  background: linear-gradient(90deg, color-mix(in srgb, var(--t3) 18%, #fff) 0%, #fff 75%); color: var(--t1);
+  border: 1px solid color-mix(in srgb, var(--t3) 30%, #fff); border-left: 7px solid var(--acc); box-shadow: var(--shadow); }
+.grp-ic { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 13px; background: var(--grad); color: #fff; box-shadow: 0 6px 14px -4px var(--acc); }
 .grp-ic svg { width: 30px; height: 30px; }
 .grp-h h2 { margin: 0; font-size: 1.75rem; font-weight: 900; letter-spacing: .2px; }
 .grp-n { font-size: .85rem; font-weight: 800; color: #0f2440; background: var(--gold); padding: 4px 12px; border-radius: 99px; }
-.grp-d { flex-basis: 100%; margin-left: 60px; margin-top: -2px; color: rgba(255, 255, 255, .88); font-size: .95rem; }
+.grp-d { flex-basis: 100%; margin-left: 60px; margin-top: -2px; color: var(--muted); font-size: .95rem; }
+@media (prefers-color-scheme: dark) {
+  .grp-h { background: linear-gradient(90deg, color-mix(in srgb, var(--t2) 45%, var(--card)) 0%, var(--card) 75%); color: #fff; border-color: var(--line); border-left-color: var(--lt); }
+}
 
 /* thẻ phần mềm: banner (mã, tên, chức năng, TCVN) + mô tả + 2 nút */
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 20px; }
@@ -214,7 +219,7 @@ html[data-theme="ocean"] { --t1: #082a63; --t2: #0d47a1; --t3: #0288d1; --acc: #
 html[data-theme="violet"] { --t1: #2a0f5c; --t2: #5b21b6; --t3: #8b5cf6; --acc: #6d28d9; --lt: #a78bfa; }
 html[data-theme="sunset"] { --t1: #6b1d0b; --t2: #c2410c; --t3: #f59e0b; --acc: #d9480f; --lt: #fb923c; --b1: #ffffff; --b2: #ffe7c2; }
 html[data-theme="crimson"] { --t1: #4c0519; --t2: #be123c; --t3: #fb7185; --acc: #be123c; --lt: #fb7185; }
-html[data-theme="teal"] { --t1: #083344; --t2: #0e7490; --t3: #22d3ee; --acc: #0e7490; --lt: #22d3ee; }
+html[data-theme="emerald"] { --t1: #053d30; --t2: #0b7a5a; --t3: #10b981; --acc: #0b8a63; --lt: #34d399; }
 html[data-theme="graphite"] { --t1: #0b1220; --t2: #1f2a44; --t3: #52637d; --acc: #2b4c7e; --lt: #7c93b8; }
 
 .theme { position: relative; flex: none; }
@@ -231,3 +236,16 @@ html[data-theme="graphite"] { --t1: #0b1220; --t2: #1f2a44; --t3: #52637d; --acc
 .sw[aria-pressed="true"] { border-color: var(--accent); background: var(--soft); }
 .sw i { flex: none; width: 22px; height: 22px; border-radius: 50%; box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .5), 0 1px 3px rgba(0, 0, 0, .3); }
 @media (max-width: 679px) { .theme-btn { width: 36px; height: 36px; font-size: 1rem; } }
+/* điện thoại: thanh trên phải vừa màn hình (logo hình + 2 nút + 🎨), không đẩy trang tràn ngang */
+body { overflow-x: clip; }
+.top-in > * { min-width: 0; }
+@media (max-width: 559px) {
+  .logo { margin-right: auto; gap: 0; }
+  .logo > span { display: none; }   /* hình logo đã có chữ PVA */
+  .nav a { padding: 7px 11px; font-size: .9rem; }
+}
+@media (max-width: 359px) {
+  .top-in { gap: 6px; }
+  .nav a { padding: 6px 8px; font-size: .82rem; }
+  .theme-btn { width: 32px; height: 32px; }
+}
