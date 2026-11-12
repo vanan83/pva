@@ -14,12 +14,12 @@ SOFT = [
  ('F4', 'Cover_Anchorage', 'Tiện ích', 'Tính toán neo và nối cốt thép theo TCVN 5574:2018.', 'https://www.youtube.com/watch?v=6P0HsMGUd4o', drv('1W-mVhwZ57rmVbhWM03T3ZguoBAUJeZ-r'), 6),
  ('F5', 'PDF Converter Pro', 'Tiện ích', 'Chuyển các định dạng sang PDF và gộp nhiều file PDF thành một.', 'https://www.youtube.com/watch?v=Nfyi-7axXzw', drv('1JhiHX7O_TXpf_UV2FlzHdEwpxc_RrVoV'), 7),
  ('PM1', 'FloorLoad', 'Tải trọng', 'Tính tải trọng tác dụng lên sàn (tĩnh tải + hoạt tải) kèm lý thuyết tính toán.', 'https://www.youtube.com/watch?v=5un3yif3k74', drv('1Vdv2r3pJlnFsRO8TKkHf2TDHVyN4GQhq'), 8),
- ('PM2', 'RCSc V1.0 – Thiết kế sàn', 'Sàn', 'Tính toán và chọn cốt thép sàn BTCT theo TCVN 5574:2018; thao tác trực quan, nhanh, xuất thuyết minh thiết kế thép sàn.', 'https://www.youtube.com/watch?v=T6zV1nsr_qM', drv('1h6npmpxlqmX0CCOlyHRnX0IZ37fMKWVi'), 9),
+ ('PM2', 'RCSc – Thiết kế sàn', 'Sàn', 'Tính toán và chọn cốt thép sàn BTCT theo TCVN 5574:2018; thao tác trực quan, nhanh, xuất thuyết minh thiết kế thép sàn.', 'https://www.youtube.com/watch?v=T6zV1nsr_qM', drv('1h6npmpxlqmX0CCOlyHRnX0IZ37fMKWVi'), 9),
  ('PM3', 'TTS – Thiết kế sàn', 'Sàn', 'Hỗ trợ tính toán và chọn cốt thép sàn BTCT theo TCVN 5574:2018, kiểm tra, bố trí và xuất thuyết minh.', 'https://youtu.be/qzeeoDvQduQ', drv('1IjWdyRmlnM6A1QPzF-GjpdfvkrVhgF1v'), 10),
  ('PM4', 'RCBc – Thiết kế dầm', 'Dầm', 'Thiết kế cốt thép dầm BTCT theo TCVN 5574:2018: dầm nhiều nhịp liên tục, tiết diện chữ nhật và chữ T, thép dọc và cốt đai.', 'https://www.youtube.com/watch?v=M23N6kyTtug', drv('1IqBHwaLV7hdnuP3-ITnfgwFW8dArtbzK'), 11),
- ('PM5', 'RCBc-V V1.0 – Kiểm tra nhanh dầm', 'Dầm', 'Kiểm tra khả năng chịu uốn, chịu cắt, bố trí thép dọc, thép đai và xuất thuyết minh theo TCVN 5574:2018.', 'https://www.youtube.com/watch?v=Xj2LOOXTrKU', drv('1-Hqeq-CkLWWvQuVdTTSatDVhlJr4wYGj'), 12),
+ ('PM5', 'RCBc-V – Kiểm tra nhanh dầm', 'Dầm', 'Kiểm tra khả năng chịu uốn, chịu cắt, bố trí thép dọc, thép đai và xuất thuyết minh theo TCVN 5574:2018.', 'https://www.youtube.com/watch?v=Xj2LOOXTrKU', drv('1-Hqeq-CkLWWvQuVdTTSatDVhlJr4wYGj'), 12),
  ('PM6', 'LTP – Cột lệch tâm phẳng', 'Cột', 'Tính cột BTCT chịu nén lệch tâm phẳng khi thiết kế khung phẳng, tự xuất nội lực và kết quả thép để làm thuyết minh.', 'https://www.youtube.com/watch?v=V7fruHs_LJM', drv('1I8tsbX--hvgufMRJh9eRgpY8O2nZ-fcF'), 13),
- ('PM7', 'RCC V1.0 – Cột theo PP gần đúng', 'Cột', 'Thiết kế cột BTCT chịu nén lệch tâm xiên theo TCVN 5574:2018 bằng phương pháp gần đúng của GS Nguyễn Đình Cống.', 'https://www.youtube.com/watch?v=Uwr87MC9HmM', drv('1syrmH3BVb6PcNvPda_Qxr-bcjkirE4qS'), 14),
+ ('PM7', 'RCC – Cột theo PP gần đúng', 'Cột', 'Thiết kế cột BTCT chịu nén lệch tâm xiên theo TCVN 5574:2018 bằng phương pháp gần đúng của GS Nguyễn Đình Cống.', 'https://www.youtube.com/watch?v=Uwr87MC9HmM', drv('1syrmH3BVb6PcNvPda_Qxr-bcjkirE4qS'), 14),
  ('PM8', 'RCCc – Cột theo biểu đồ tương tác', 'Cột', 'Mô hình fiber dựng biểu đồ tương tác N-M2-M3, kiểm tra cột chịu nén lệch tâm xiên theo TCVN 5574:2018.', 'https://www.youtube.com/watch?v=WQFGHbsKIMw', drv('1Dl80KVktVYHaRfOsJHG8KAEl0MMBKxxS'), 15),
  ('PM9', 'TTC – Cột kết hợp 2 phương pháp', 'Cột', 'Tính thép theo phương pháp gần đúng của GS Nguyễn Đình Cống rồi kiểm tra lại bằng biểu đồ tương tác.', 'https://www.youtube.com/watch?v=Xj2LOOXTrKU', drv('1fB3o9kAbZCOBi2JjqvhutumJHUiKYM3L'), 16),
  ('PM10', 'WindFrame – Gió khung phẳng', 'Tải trọng', 'Tính tải trọng gió cho khung phẳng.', 'https://www.youtube.com/watch?v=0kR2lLLisFo', drv('1brpDY_PKLWf4Fs8gFOCdm5i0gTMwHayg'), 17),
@@ -41,26 +41,39 @@ GROUPS = ['Tiện ích', 'Sàn', 'Dầm', 'Cột', 'Tải trọng', 'Móng']
 
 e = lambda t: html.escape(t, quote=True)
 GKEY = {'Tiện ích': 'ti', 'Sàn': 'san', 'Dầm': 'dam', 'Cột': 'cot', 'Tải trọng': 'tt', 'Móng': 'mong'}
-cards = []
-for code, name, grp, desc, vid, dl, _ in SOFT:
+GROUPS = ['Tải trọng', 'Sàn', 'Dầm', 'Cột', 'Móng', 'Tiện ích']
+GDESC = {'Sàn': 'Tính toán và chọn cốt thép sàn', 'Dầm': 'Thiết kế và kiểm tra dầm BTCT', 'Cột': 'Cột chịu nén lệch tâm phẳng và xiên',
+         'Móng': 'Cọc, móng cọc, móng đơn', 'Tải trọng': 'Tải trọng sàn và tải trọng gió', 'Tiện ích': 'Công cụ hỗ trợ công việc hằng ngày'}
+def card(code, name, grp, desc, vid, dl):
     main, sub = (name.split(' – ', 1) + [''])[:2]
     if not sub: sub = {'Tiện ích': 'Tiện ích kỹ sư', 'Dầm': 'Thiết kế dầm', 'Móng': 'Tính toán móng'}.get(grp, grp)
-    tag = 'TCVN 5574:2018' if '5574' in desc else ('TCVN 2737:2023' if grp == 'Tải trọng' else ('TCVN 10304:2025' if 'cọc' in desc else ''))
+    std = 'TCVN 5574:2018' if '5574' in desc else ('TCVN 2737:2023' if grp == 'Tải trọng' else ('TCVN 10304:2025' if 'cọc' in desc else ''))
     k = GKEY[grp]
-    cards.append(f'''<article class="card" data-g="{e(grp)}" data-q="{e((code + ' ' + name + ' ' + desc + ' ' + grp).lower())}">
+    return f'''<article class="card" data-g="{e(grp)}" data-q="{e((code + ' ' + name + ' ' + desc + ' ' + grp).lower())}">
   <a class="thumb g-{k}" href="{e(dl)}" target="_blank" rel="noopener" aria-label="Tải {e(name)}">
-    <svg class="ico" aria-hidden="true"><use href="#i-{k}"/></svg>
-    <span class="tb">PVA SOFTWARE</span><span class="tc">{code}</span>
-    <span class="tn">{e(main).replace('_', '_<wbr>')}</span><span class="ts">{e(sub)}</span>{f'<span class="tg">{tag}</span>' if tag else ''}</a>
-  <div class="body"><div class="meta"><span class="code">{code}</span><span class="grp">{e(grp)}</span></div>
-    <h3>{e(name)}</h3><p>{e(desc)}</p>
+    <img class="ico" src="logos/{code.lower()}.webp?v={VER}" width="128" height="128" alt="" loading="lazy" decoding="async">
+    <span class="tc">{code}</span><span class="tn">{e(main).replace('_', '_<wbr>')}</span><span class="ts">{e(sub)}</span>{f'<span class="tg">{std}</span>' if std else ''}</a>
+  <div class="body"><p>{e(desc)}</p>
     <div class="acts"><a class="btn yt" href="{e(vid)}" target="_blank" rel="noopener">▶ Xem video</a><a class="btn dl" href="{e(dl)}" target="_blank" rel="noopener">⬇ Tải về</a></div></div>
-</article>''')
+</article>'''
+sections = []
+for g in GROUPS:
+    items = [s_ for s_ in SOFT if s_[2] == g]
+    sections.append(f'''<section class="grp" data-g="{e(g)}"><div class="grp-h"><span class="grp-ic"><svg aria-hidden="true"><use href="#i-{GKEY[g]}"/></svg></span><h2>{g}</h2><span class="grp-n">{len(items)} phần mềm</span><span class="grp-d">{GDESC[g]}</span></div>
+<div class="grid">
+{chr(10).join(card(*it[:6]) for it in items)}
+</div></section>''')
 chips = '<button class="chip on" data-g="">Tất cả <b>%d</b></button>' % len(SOFT) + ''.join(
-    f'<button class="chip" data-g="{g}">{GROUP_ICON[g]} {g} <b>{sum(1 for s in SOFT if s[2] == g)}</b></button>' for g in GROUPS)
+    f'<button class="chip" data-g="{g}">{g} <b>{sum(1 for s in SOFT if s[2] == g)}</b></button>' for g in GROUPS)
 std = ''.join(f'''<article class="std"><div class="std-ic">{ic}</div><div class="std-b"><h3>{e(no)}</h3><p>{e(t)}</p>
   <div class="acts"><button class="btn rd" data-id="{fid}" data-t="{e(no + ' – ' + t)}">📖 Đọc online</button><a class="btn dl" href="https://drive.google.com/uc?export=download&amp;id={fid}" target="_blank" rel="noopener">⬇ Tải PDF</a></div></div></article>''' for no, t, fid, ic in TCVN)
 vd = '/'.join(reversed(VER.split('-')[0].split('.')))
+# Bộ màu cho nút 🎨: (mã, tên, màu đậm, màu sáng) – mã khớp html[data-theme="…"] trong styles.css; mã đầu là mặc định.
+THEMES = [('ocean', 'Đại dương', '#0d47a1', '#29a8f0'), ('emerald', 'Ngọc lục bảo', '#0b7a5a', '#34d399'),
+          ('violet', 'Tím', '#5b21b6', '#a78bfa'), ('sunset', 'Hoàng hôn', '#c2410c', '#fbbf24'),
+          ('crimson', 'Đỏ đô', '#be123c', '#fb7185'), ('teal', 'Xanh ngọc', '#0e7490', '#22d3ee'),
+          ('graphite', 'Than chì', '#1f2a44', '#7c93b8')]
+theme_btns = ''.join(f'<button class="sw" data-theme="{k}" data-c="{c1}" aria-pressed="false"><i style="background:linear-gradient(135deg,{c1},{c2})"></i>{n}</button>' for k, n, c1, c2 in THEMES)
 
 page = f'''<!doctype html>
 <html lang="vi" translate="no" class="notranslate">
@@ -75,7 +88,8 @@ page = f'''<!doctype html>
 <link rel="icon" type="image/svg+xml" href="logo.svg">
 <link rel="alternate icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v={VER}">
+<script>try {{ var t = localStorage.getItem('pva.theme'); if (t && t !== 'ocean') document.documentElement.dataset.theme = t; }} catch (e) {{}}</script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
@@ -89,19 +103,21 @@ page = f'''<!doctype html>
 <header class="top"><div class="wrap top-in">
   <a class="logo" href="#"><img class="lg" src="logo.svg" width="44" height="44" alt="PVA"><span><b>PVA <i>SOFTWARE</i></b><small>Phạm Văn An · Phần mềm kết cấu</small></span></a>
   <nav class="nav"><a href="#phan-mem" class="on" data-tab="phan-mem">💻 Phần mềm</a><a href="#tcvn" data-tab="tcvn">📘 TCVN</a><a href="#lien-he" class="nav-c">📞 Liên hệ</a></nav>
+  <div class="theme"><button class="theme-btn" id="themeBtn" aria-label="Đổi màu giao diện" aria-expanded="false" title="Đổi màu giao diện">🎨</button>
+    <div class="theme-pop" id="themePop" hidden><b>Chọn màu giao diện</b><div class="theme-list">{theme_btns}</div></div></div>
 </div></header>
 <main>
 <section class="hero"><div class="wrap">
   <img class="hero-logo" src="logo.svg" width="190" height="190" alt="" aria-hidden="true">
   <h1>Phần mềm kết cấu <span>nhanh – chính xác – theo TCVN</span></h1>
   <p>Thiết kế sàn, dầm, cột, móng, tải trọng gió và các tiện ích cho kỹ sư xây dựng. Mỗi phần mềm có video hướng dẫn và link tải.</p>
-  <div class="stats"><div><b>{len(SOFT)}</b><span>phần mềm</span></div><div><b>{len(TCVN)}</b><span>tiêu chuẩn TCVN</span></div><div><b>5574</b><span>TCVN 2018</span></div></div>
+  <div class="stats"><div><b>{len(SOFT)}</b><span>phần mềm</span></div><div><b>{len(TCVN)}</b><span>tiêu chuẩn TCVN</span></div></div>
 </div></section>
 
 <section id="phan-mem" class="tab on"><div class="wrap">
   <div class="tools"><input id="q" type="search" placeholder="🔍 Tìm phần mềm: dầm, cột, móng, gió, PDF…" autocomplete="off"><div class="chips">{chips}</div></div>
-  <div class="grid" id="grid">
-{chr(10).join(cards)}
+  <div id="list">
+{chr(10).join(sections)}
   </div>
   <p class="empty" id="empty" hidden>Không tìm thấy phần mềm phù hợp.</p>
 </div></section>
@@ -116,9 +132,8 @@ page = f'''<!doctype html>
   <div class="c-acts">
     <a class="cbtn zalo" href="https://zalo.me/0848355888" target="_blank" rel="noopener">💬 Zalo 0848.355.888</a>
     <a class="cbtn tel" href="tel:0848355888">📞 Gọi điện</a>
-    <a class="cbtn mail" href="mailto:an0848355888@gmail.com">✉️ Email</a>
-    <a class="cbtn" href="{CONTACT['doc']}" target="_blank" rel="noopener">📄 Thông tin & bảng giá</a>
-    <a class="cbtn" href="{CONTACT['all']}" target="_blank" rel="noopener">📁 Thư mục tất cả phần mềm</a>
+    <a class="cbtn mail" href="mailto:an0848355888@gmail.com">✉️ an0848355888@gmail.com</a>
+    <a class="cbtn" href="{CONTACT['all']}" target="_blank" rel="noopener">📁 Tất cả phần mềm</a>
     <a class="cbtn ytc" href="{CONTACT['yt']}" target="_blank" rel="noopener">▶ Kênh YouTube</a>
   </div>
 </div></section>
@@ -132,7 +147,7 @@ page = f'''<!doctype html>
   <div class="v-top"><b id="vTitle"></b><span class="v-acts"><a id="vOpen" class="vbtn" target="_blank" rel="noopener">↗ Mở Drive</a><a id="vDl" class="vbtn" target="_blank" rel="noopener">⬇ Tải</a><button class="vbtn x" id="vClose" aria-label="Đóng">✕</button></span></div>
   <div class="v-body"><div class="v-load">Đang mở tài liệu…</div><iframe id="vFrame" title="Xem tài liệu" allow="autoplay"></iframe></div>
 </div></div>
-<script src="app.js" defer></script>
+<script src="app.js?v={VER}" defer></script>
 </body>
 </html>
 '''

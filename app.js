@@ -3,6 +3,26 @@
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const norm = (t) => t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd');
 
+  /* Đổi màu giao diện (nút 🎨): lưu lựa chọn trong máy người xem; đầu trang đã áp dụng sẵn để không bị nháy màu */
+  const tBtn = $('#themeBtn'), tPop = $('#themePop'), meta = $('meta[name="theme-color"]');
+  const curTheme = () => document.documentElement.dataset.theme || 'ocean';
+  function paintTheme() {
+    const t = curTheme();
+    $$('.sw').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.theme === t)));
+    const on = $('.sw[aria-pressed="true"]'); if (on && meta) meta.content = on.dataset.c;
+  }
+  function setTheme(t) {
+    if (t === 'ocean') delete document.documentElement.dataset.theme; else document.documentElement.dataset.theme = t;
+    try { localStorage.setItem('pva.theme', t); } catch (e) { /* trình duyệt chặn lưu: vẫn đổi màu cho lần xem này */ }
+    paintTheme();
+  }
+  const popShow = (on) => { tPop.hidden = !on; tBtn.setAttribute('aria-expanded', String(on)); };
+  tBtn.addEventListener('click', (e) => { e.stopPropagation(); popShow(tPop.hidden); });
+  $$('.sw').forEach((b) => b.addEventListener('click', () => setTheme(b.dataset.theme)));
+  document.addEventListener('click', (e) => { if (!tPop.hidden && !tPop.contains(e.target)) popShow(false); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') popShow(false); });
+  paintTheme();
+
   /* Tab: #phan-mem / #tcvn (liên hệ là phần chung ở cuối trang) */
   function showTab() {
     const id = location.hash === '#tcvn' ? 'tcvn' : 'phan-mem';
